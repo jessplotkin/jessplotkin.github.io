@@ -1,0 +1,56 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #fortuneOutput, #dogAgeOutput, #reverseNumberOutput, #alphabeticalOrderOutput, #capitalizeOutput {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #fortuneOutput p, #dogAgeOutput p, #reverseNumberOutput p, #alphabeticalOrderOutput p, #capitalizeOutput p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin: 0 0 10px;
+  }
+  
+  input[type="number"], button {
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  input[type="number"] {
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
