@@ -9,8 +9,8 @@ function randomValueFromArray(array) {
 
 let storyText = "It was 110 fahrenheit outside, so :insertx: went for a hike in Boulder. When they got to :inserty:, they started watching the Buffs game, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 800 pounds, and the Buffs lost.";
 let insertX = ["Jess the Brave", "JHP the Explorer", "Ralphie"];
-let insertY = ["The rockies", "the pearl street mall", "the hidden flatirons"];
-let insertZ = ["Blew up!", "started random dancing", "Slipped and fell"];
+let insertY = ["The Rockies", "the Pearl Street Mall", "the hidden Flatirons"];
+let insertZ = ["Blew up!", "started random dancing", "slipped and fell"];
 
 if (randomize) {
   randomize.addEventListener('click', result);
@@ -32,7 +32,8 @@ function result() {
     newStory = newStory.replace('Bob', name);
   }
 
-  if (document.getElementById("uk") && document.getElementById("uk").checked) {
+  const uk = document.getElementById("uk");
+  if (uk && uk.checked) {
     const weight = Math.round(800 * 0.0714286) + ' stone';
     const temperature = Math.round((110 - 32) * 5 / 9) + ' centigrade';
     
