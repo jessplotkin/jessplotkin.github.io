@@ -7,7 +7,7 @@ function randomValueFromArray(array) {
   return array[random];
 }
 
-let storyText = "It was 110 fahrenheit outside, so :insertx: went for a hike in Boulder. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 800 pounds, and it was a cold day.";
+let storyText = "It was 110 fahrenheit outside, so :insertx: went for a hike in Boulder. When they got to :inserty:, they started watching the Buffs game, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 800 pounds, and the Buffs lost.";
 let insertX = ["Jess the Brave", "JHP the Explorer", "Superwoman"];
 let insertY = ["The rockies", "the pearl street mall", "the hidden flatirons"];
 let insertZ = ["Blew up!", "started random dancing", "Slipped and fell"];
