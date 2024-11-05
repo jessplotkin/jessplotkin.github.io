@@ -7,10 +7,10 @@ function randomValueFromArray(array) {
   return array[random];
 }
 
-let storyText = "It was a bright and chilly day, so :insertx: decided to go for a hike. When they reached :inserty:, they were astonished to see :insertz:. Jess saw the whole thing and just laughed — :insertx: was always finding the wildest adventures.";
+let storyText = "It was 110 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 800 pounds, and it was a cold day.";;
 let insertX = ["Jess the Brave", "JHP the Explorer", "Superwoman"];
 let insertY = ["The rockies", "the pearl street mall", "the hidden flatirons"];
-let insertZ = ["a treasure chest ", "a magical creature dancing", "A mountain lion"];
+let insertZ = ["Blew up!", "started random dancing", "Slipped and fell"];
 
 randomize.addEventListener('click', result);
 
@@ -31,11 +31,11 @@ function result() {
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(300 * 0.0714286) + ' stone';
-    const temperature = Math.round((94 - 32) * 5 / 9) + ' centigrade';
+    const weight = Math.round(800 * 0.0714286) + ' stone';
+    const temperature = Math.round((110 - 32) * 5 / 9) + ' centigrade';
     
-    newStory = newStory.replace('300 pounds', weight);
-    newStory = newStory.replace('94 fahrenheit', temperature);
+    newStory = newStory.replace('800 pounds', weight);
+    newStory = newStory.replace('110 fahrenheit', temperature);
   }
 
   story.textContent = newStory;
