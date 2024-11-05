@@ -41,8 +41,10 @@ function result() {
     newStory = newStory.replace('110 fahrenheit', temperature);
   }
 
+  console.log("Updated story text:", newStory); 
+
   if (story) {
-    story.textContent = newStory;
+    story.textContent = newStory; 
     story.style.visibility = 'visible';
   }
 }
