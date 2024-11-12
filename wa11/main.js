@@ -13,24 +13,16 @@ const altText = {
   'pic5.JPG': 'Autumn In Boulder'
 };
 
-// Check if thumbBar is found
-if (!thumbBar) {
-  console.log("Thumb-bar element not found!");
-}
-
 // Loop through images to create thumbnails and add click functionality
 imageFilenames.forEach(filename => {
   const newImage = document.createElement('img');
-  newImage.setAttribute('src', `images/${filename}`);
+  newImage.setAttribute('src', `images/${filename}`); // Use backticks here
   newImage.setAttribute('alt', altText[filename]);
   thumbBar.appendChild(newImage);
 
-  // Debugging: Log to ensure thumbnails are created
-  console.log(`Thumbnail created for: ${filename}`);
 
   // Add a click event listener to each thumbnail
   newImage.addEventListener('click', () => {
-    console.log(`Thumbnail clicked for: ${filename}`);  // Log when the thumbnail is clicked
     displayedImage.setAttribute('src', `images/${filename}`);
     displayedImage.setAttribute('alt', altText[filename]);
   });
@@ -38,9 +30,8 @@ imageFilenames.forEach(filename => {
 
 // Wiring up the Darken/Lighten button
 btn.addEventListener('click', () => {
-  console.log('Button clicked');  // Log to ensure button click is working
   const isDark = btn.getAttribute('class') === 'dark';
-
+  
   if (isDark) {
     btn.setAttribute('class', 'light');
     btn.textContent = 'Lighten';
