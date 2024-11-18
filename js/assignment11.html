@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xkcd Machine</title>
+  <style>
+    img {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 0 auto;
+    }
+    #title {
+      text-align: center;
+      font-size: 1.5em;
+      margin: 10px;
+    }
+    #date {
+      text-align: center;
+      font-size: 1.1em;
+      margin: 10px;
+    }
+    #randomButton {
+      display: block;
+      margin: 20px auto;
+      padding: 10px;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="title">Click the button to load a random xkcd comic!</div>
+  <img id="comicImage" src="" alt="" />
+  <div id="date"></div>
+  <button id="randomButton">Get Random Comic</button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
