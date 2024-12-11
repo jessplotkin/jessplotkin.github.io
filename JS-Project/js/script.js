@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectsContainer = document.getElementById("projects-container");
   const techSort = document.getElementById("tech-sort");
 
-  // Sample JSON data (or fetch dynamically)
+ 
   const projects = [
     {
       id: 1,
@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   ];
 
-  // Function to render projects dynamically
+
   function renderProjects(filteredProjects) {
-    projectsContainer.innerHTML = ""; // Clear existing content
+    projectsContainer.innerHTML = ""; 
     filteredProjects.forEach(project => {
       const projectHTML = `
         <div class="project">
@@ -46,19 +46,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Initial render of all projects
+
   renderProjects(projects);
 
-  // Sorting function
+
   techSort.addEventListener("change", (event) => {
     const selectedTech = event.target.value;
     if (selectedTech === "all") {
-      renderProjects(projects); // Show all projects
+      renderProjects(projects); 
     } else {
       const filteredProjects = projects.filter(project =>
         project.technologies.includes(selectedTech)
       );
-      renderProjects(filteredProjects); // Show filtered projects
+      renderProjects(filteredProjects); 
     }
   });
 });

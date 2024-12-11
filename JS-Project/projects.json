@@ -21,9 +21,9 @@
   {
     "id": 3,
     "title": "My JS Image Carousel Project",
-    "description": "My assignment 11 for ATLS 2200",
+    "description": "Image Carousel of my life in Boulder,CO",
     "technologies": ["JavaScript"],
-    "images": ["assets/images/project3_img1.jpg", "assets/images/project3_img2.jpg"],
+    "images": ["images/boulder.jpg"],
     "link": "https://jessplotkin.github.io/wa11/wa11.html"
   }
 ]
