@@ -1,0 +1,15 @@
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel img {
+    display: none;
+    width: 100%;
+  }
+  
+  .carousel img.active {
+    display: block;
+  }
+  

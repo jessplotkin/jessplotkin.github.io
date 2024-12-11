@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Jess P's Portfolio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Filter Section -->
+    <section id="filters">
+      <label for="tech-sort">Sort by Technology:</label>
+      <select id="tech-sort">
+        <option value="all">All</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">JavaScript</option>
+      </select>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects-container">
+      <div class="project">
+        <h2>HTML Sloth Project</h2>
+        <img src="images/sloth.jpg" alt="Sloth Image" class="project-img">
+        <p>Encyclopedia of Sloths!</p>
+        <a href="https://jessplotkin.github.io/wa/wa3/wa3.html" class="project-link">View Project</a>
+      </div>
+      <div class="project">
+        <h2>CSS Project</h2>
+        <img src="images/symphony.jpg" alt="Symphony Project" class="project-img">
+        <p>Group Project, website for Colorado Symphony</p>
+        <a href="https://jessplotkin.github.io/JAGTeam_css_repo/orchestra.html" class="project-link">View Project</a>
+      </div>
+      <div class="project">
+        <h2>My JS Image Carousel Project</h2>
+        <img src="images/boulder.jpeg" alt="Boulder Project" class="project-img">
+        <p>Image Carousel of my life in Boulder, CO</p>
+        <a href="https://jessplotkin.github.io/wa11/wa11.html" class="project-link" target="_blank">View Project</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 My Portfolio</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

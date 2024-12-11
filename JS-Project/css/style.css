@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header, footer {
+  background-color: #e595ed;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+/* Projects Container */
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+  margin: 2em;
+}
+
+.project-card {
+  background: white;
+  padding: 1em;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Carousel Styling */
+.carousel-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.carousel {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Projects Section */
+.projects {
+  text-align: center;
+  padding: 2em;
+
+
+}
+#projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+  margin: 2em auto;
+  padding: 0 1em;
+  max-width: 1200px;
+}
+
+/* Individual Project Card */
+.project {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1em;
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden; /* Prevents content from overflowing */
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+/* Project Image - Resize and Fit */
+.project-img {
+  width: 100%;            /* Makes image responsive */
+  max-width: 100%;        /* Prevents image from overflowing */
+  max-height: 200px;      /* Restricts image height */
+  object-fit: cover;      /* Ensures the image scales neatly and crops if necessary */
+  border-radius: 8px;     /* Adds rounded corners */
+  display: block;         /* Fixes inline spacing */
+  margin: 0 auto 1em;
+
+}

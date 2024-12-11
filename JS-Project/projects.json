@@ -1,0 +1,29 @@
+[
+  {
+    
+      "id": 1,
+      "title": "HTML Sloth Project",
+      "description": "Encyclopedia of Sloths!",
+      "technologies": ["HTML"],
+      "images": ["images/sloth.jpg"],
+      "link": "https://jessplotkin.github.io/wa/wa3/wa3.html"
+
+  
+  },
+  {
+    "id": 2,
+    "title": "CSS Project",
+    "description": "Group Project, website for Colorado Symphony",
+    "technologies": ["CSS"],
+    "images": ["images/symphony.jpg"],
+    "link": "https://jessplotkin.github.io/JAGTeam_css_repo/orchestra.html "
+  },
+  {
+    "id": 3,
+    "title": "My JS Image Carousel Project",
+    "description": "My assignment 11 for ATLS 2200",
+    "technologies": ["JavaScript"],
+    "images": ["assets/images/project3_img1.jpg", "assets/images/project3_img2.jpg"],
+    "link": "https://jessplotkin.github.io/wa11/wa11.html"
+  }
+]
